@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cart</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/cart.js"></script>
+	</head>
+	<body>
+	<!--top部分开始---------------------------------------------------------->
+	<div class="top">
+		<p class="collect">收藏</p>
+        <p class="welcome">您好,欢迎来到家有汇</p>
+        <a  id="login" href="login.html">【登录】</a>
+        <a  id="regist" href="register.html">【注册】</a>
+        <a  id="activate" href="javascript:;">【电视用户激活】</a>
+        <h3 class="shoppingcar"><a href="cart.html">购物车<span>(4)</span></a></h3>
+        <a  id="my" href="javascript:;">我的家有</a> 
+	</div>
+	<!--nav部分开始------------------------------------------------------------>
+	<div class="nav">
+		<img src="images/logo.jpg"/>
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="javascript:;">今日直播</a></li>
+			<li><a href="javascript:;">限时特价</a></li>
+			<li><a href="javascript:;">生活家</a></li>
+			<li><a href="javascript:;">家有尊享</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" class="content" >
+			<button class="btn_search">搜索</button>
+		</div>
+	</div>
+	<!--cart_part部分开始------------------------------------------------------------>
+	<div class="cart_part">
+		<h3 class="cart_title">全部商品</h3>
+		<h3 class="tobuy">您的购物车是空的,赶紧行动吧!</h3>
+		
+		<div class="cart_box">
+			<div class="cart_top">
+			<label><input class="check_all" type="checkbox"/>&nbsp;全选</label>
+			<p class="goods">商品</p>
+			<p class="price">单价</p>
+			<p class="count">数量</p>
+			<p class="total">小计</p>
+			<p class="bahave">操作</p>
+			</div>
+			<table>
+				<tr>
+		            <td class="checkeach"><input class="check_one" type="checkbox"/></td>
+		            <td class="eachgood"><img src="images/cart/thing1.jpg"/><span>乐百惠水杯</span></td>
+		            <td class="eachprice">59.20</td>
+		            <td class="eachcount">
+		            	<span class="reduce"></span>
+		                <input class="count_input" type="text" value="1"/>
+		                <span class="add">+</span>
+		            </td>
+		            <td class="subtotal">59.20</td>
+		            <td class="eachbehave"><a class="delete" href="javascript:;">删除</a></td>
+		        </tr>
+		        
+		        <tr>
+		            <td class="checkeach"><input class="check_one" type="checkbox"/></td>
+		            <td class="eachgood"><img src="images/cart/thing2.jpg"/><span>奥利奥夹心饼干轻甜口味390g 美味早餐装</span></td>
+		            <td class="eachprice">12.50</td>
+		            <td class="eachcount">
+		            	<span class="reduce"></span>
+		                <input class="count_input" type="text" value="1"/>
+		                <span class="add">+</span>
+		            </td>
+		            <td class="subtotal">12.50</td>
+		            <td class="eachbehave"><a class="delete" href="javascript:;">删除</a></td>
+		        </tr>
+		        
+		        <tr>
+		            <td class="checkeach"><input class="check_one" type="checkbox"/></td>
+		            <td class="eachgood"><img src="images/cart/thing3.jpg"/><span>字母涂鸦印花收腰长袖中长衬衫连衣裙女</span></td>
+		            <td class="eachprice">126.00</td>
+		            <td class="eachcount">
+		            	<span class="reduce"></span>
+		                <input class="count_input" type="text" value="1"/>
+		                <span class="add">+</span>
+		            </td>
+		            <td class="subtotal">126.00</td>
+		            <td class="eachbehave"><a class="delete" href="javascript:;">删除</a></td>
+		        </tr>
+		        
+		        <tr>
+		            <td class="checkeach"><input class="check_one" type="checkbox"/></td>
+		            <td class="eachgood"><img src="images/cart/thing4.jpg"/><span>双肩背包女韩版潮迷彩学院风中学生书包休闲</span></td>
+		            <td class="eachprice">56.00</td>
+		            <td class="eachcount">
+		            	<span class="reduce"></span>
+		                <input class="count_input" type="text" value="1"/>
+		                <span class="add">+</span>
+		            </td>
+		            <td class="subtotal">56.00</td>
+		            <td class="eachbehave"><a class="delete" href="javascript:;">删除</a></td>
+		        </tr>
+			</table>
+			<div class="cart_foot">
+            <a class="deleteall" href="javascript:;">删除</a>
+			<p class="selecetd">已选商品<span id="finallycount">0</span>件</p>	
+			<p class="alltotal">合计<span id="finallyprice">0</span>元</p>	
+			<p class="buythem">结算</p>
+			</div>
+		</div>
+	</div>
+<!--moreinfo部分开始---------------------------------------------------------->
+	 <div class="moreinfo">
+	  	<div class="moresort">
+	  		<dl class="aboutus">
+	  		<dt><img src="images/moreinfo/1.jpg"/> 关于我们</dt>
+			<dd><a href="javascript:;">公司介绍</a></dd>
+			<dd><a href="javascript:;">招聘信息</a></dd>
+			<dd><a href="javascript:;">联系我们</a></dd>
+			<dd><a href="javascript:;">用户隐私条款</a></dd>
+	  		</dl>
+	  	
+	  	
+	  		<dl class="order">
+	  		<dt><img src="images/moreinfo/2.jpg"/> 订购指南</dt>
+			<dd><a href="javascript:;">交易条款</a></dd>
+			<dd><a href="javascript:;">注册/购物流程</a></dd>
+			<dd><a href="javascript:;">退/换货</a></dd>
+			<dd><a href="javascript:;">积分说明</a></dd>
+			<dd><a href="javascript:;">发票指南</a></dd>
+			<dd><a href="javascript:;">会员制度说明</a></dd>
+	  		</dl>
+	  	
+	  	
+	  		<dl class="dispatch">
+	  		<dt><img src="images/moreinfo/3.jpg"/> 配送服务</dt>
+			<dd><a href="javascript:;">配送区域</a></dd>
+			<dd><a href="javascript:;">配送时间</a></dd>
+			<dd><a href="javascript:;">验货与签收</a></dd>
+	  		</dl>
+	 
+	  	
+	  		<dl class="paystyle">
+	  		<dt><img src="images/moreinfo/4.jpg"/> 支付方式</dt>
+			<dd><a href="javascript:;">网上支付</a></dd>
+			<dd><a href="javascript:;">货到付款</a></dd>
+	  		</dl>
+	  
+	  	
+	  		<dl class="partner">
+	  		<dt><img src="images/moreinfo/5.jpg"/> 合作专区</dt>
+			<dd><a href="javascript:;">成为供应商</a></dd>
+			<dd><a href="javascript:;">供应商系统</a></dd>
+			<dd><a href="javascript:;">合作伙伴</a></dd>
+	  		</dl>
+		  	<div class="moreinfo_left">
+		  		<img src="images/moreinfo/6.jpg"/>
+		  		<img src="images/moreinfo/7.jpg"/>
+		  		<p>家有微信</p>
+		  		<p>惠家APP</p>
+		  		<img class="telephone" src="images/moreinfo/8.jpg"/>
+		  	</div>
+	  	</div>
+	 </div>
+<!--moreinfo2部分开始---------------------------------------------------------->
+   <div class="moreinfo2">
+   	  <dl>
+   	  	<dt><img src="images/moreinfo/10.jpg"/></dt>
+   	  	<dd class="line1">100%正品保证</dd>
+   	  	<dd class="line2">质量有保障</dd>
+   	  </dl>
+   	  
+   	  <dl>
+   	  	<dt><img src="images/moreinfo/11.jpg"/></dt>
+   	  	<dd class="line1">在线支付 全场包邮</dd>
+   	  	<dd class="line2">送货上门</dd>
+   	  </dl>
+   	  
+   	  <dl>
+   	  	<dt><img src="images/moreinfo/12.jpg"/></dt>
+   	  	<dd class="line1">支持银联刷卡付款</dd>
+   	  	<dd class="line2">付款更安全</dd>
+   	  </dl>
+   	  
+   	  <dl>
+   	  	<dt><img src="images/moreinfo/13.jpg"/></dt>
+   	  	<dd class="line1">货到付款 开箱验货</dd>
+   	  	<dd class="line2">满意才收货</dd>
+   	  </dl>
+   	  
+   	  <dl>
+   	  	<dt><img src="images/moreinfo/14.jpg"/></dt>
+   	  	<dd class="line1">7X24小时人工服务</dd>
+   	  	<dd class="line2">微笑无时不刻 4008-888</dd>
+   	  </dl>
+   </div>
+<!--footer部分开始---------------------------------------------------------->
+	<div class="footer">
+		<p>友情链接：北京商报|装修|新闻|建材|潮牌|没得比导购网|搜狗|服装店|超级返|服装批发|行业网|手表网|网页大全|韩都衣舍|折88|乐考网|购物导航网站|生活百科网|360导航网站|入门户|114导航网站|2523网址导航|IFA2015</p>
+		<p>Copyright&copy;2008-2013jiayougo.com家有购物集团 版权所有 黔ICP备13002365号 增值电信业务经营许可证: 黔B2-20120036</p>
+	    <div class="banks">
+	    <img src="images/bank/1.jpg"/>
+	    <img src="images/bank/2.jpg"/>
+	    <img src="images/bank/3.jpg"/>
+	    <img src="images/bank/4.jpg"/>
+	    <img src="images/bank/5.jpg"/>
+	    <img src="images/bank/6.jpg"/>
+	    <img src="images/bank/7.jpg"/>
+	    <img src="images/bank/8.jpg"/>
+	    <img src="images/bank/9.jpg"/>
+	    <img src="images/bank/10.jpg"/>  	
+	    </div>
+	</div>
+	</body>
+</html>

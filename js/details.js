@@ -49,7 +49,7 @@ $(function(){
   		
   		if(ev.clientY-$(".product_left_medium").offset().top+scrollT<Rh/2){
   			nTop=0;
-  		}else if(ev.clientY-$(".product_left_medium").offset().top>Lh-Rh/2){
+  		}else if(ev.clientY-$(".product_left_medium").offset().top+scrollT>Lh-Rh/2){
   		    nTop=Lh-Rh;
   		}else{
   			nTop=ev.clientY-$(".product_left_medium").offset().top+scrollT-Rh/2
@@ -146,7 +146,7 @@ $(function(){
 		var $value = $(".judge_msg_input input").val();
 		$(".judge_msg_input input").val("");
 		$(".judge ul").prepend("<li/>");
-		$(".judge ul li:first").append('<div class="judge_left"><span><img src="images/details/touxiang.jpg"/></span></div><div class="judge_right"><div class="userinfo"><cite>47#</cite><span class="name">谷子的心</span><span class="info">神马级手机控</span></div><div class="msg">'+$value+'</div><div class="func"><cite><a class="del" href="#">删除</a><a class="huifu" href="#">回复</a></cite></div></div>');
+		$(".judge ul li:first").append('<div class="judge_left"><span><img src="images/details/touxiang.jpg"/></span></div><div class="judge_right"><div class="userinfo"><cite>47#</cite><span class="name">谷子的心</span><span class="info">神马级手机控</span></div><div class="msg">'+$value+'</div><div class="func"><cite><a class="del" href="javascript:;">删除</a><a class="huifu" href="javascript:;">回复</a></cite></div></div>');
 		$(".judge ul li:first").find("a.huifu").click(function(){
 			$(".msg_input input").val("");
 			$("button.pinglun").hide();

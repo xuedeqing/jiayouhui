@@ -111,4 +111,51 @@ $(function(){
 	$(".backtop").click(function(){
 		$("body,html").animate({"scrollTop":"0"},400)
 	})
+	//侧边导航AJAX部分
+	$.ajax({
+				type:"get",
+				url:"data/list.txt",
+				cache:false,
+				async:true,
+				success:function(str){
+				 var arr=eval(str);
+			   	 console.log(arr);
+			      for(var i=0;i<arr.length;i++){
+			     	 var json=arr[i];
+			     	 $(".left ul").append("<li><img src='"+json["catlogo"]+"'>"+json["catname"]+"</li>")
+  		
+			     	 var div=$("<div></div>");
+			     	 var arr01=json["catlist"];
+			     	 for(var j=0;j<arr01.length;j++){
+			     	 	var json01=arr01[j];
+			     	 	var dl=$("<dl><dt>"+json01["catname"]+"</dt></dl>");
+			     	 	var dd=$("<dd></dd>");
+			     	 	var arr02=json01["catlist"];
+			     	 	for(var k=0;k<arr02.length;k++){
+			     	 		var href=$("<a href='javascript:;'>"+arr02[k]+"</a>");
+			     	 		dd.append(href);
+			     	 	}
+			     	 	dl.append(dd);
+			     	 	div.append(dl);
+			     	 }
+			     	 $(".right").append(div);
+			     }
+					    $(function(){
+						$(".left").mouseover(function(){
+							$(".right").show();
+						}).find("li").mouseover(function(){
+							$(this).addClass("active").siblings().removeClass("active");
+							$(".right div").eq($(this).index()).show().siblings().hide();
+						})
+						$(".left").mouseleave(function(){
+							$(".right").hide();
+							$(this).find("li").removeClass("active");
+						})
+					})
+				},
+					error: function(xhr){
+						alert(xhr.status);
+					}
+				});
+			
 })

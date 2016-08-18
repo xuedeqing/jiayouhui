@@ -11,6 +11,64 @@ img{
 .pagenext img{
 	display: block;
 }
+/*--侧边导航--*/
+  .sort{
+		width: 1230px;
+		height: 480px;
+		margin:0 auto;
+	
+	}
+	.sort .left{
+		width: 180px;
+		height: 373px;
+		background: #EDEDEC;
+		position: relative;
+		z-index: 10;
+	}
+	.sort .left li{
+		height: 30px;
+		line-height: 30px;
+		padding-left:17px ;
+		font-size: 12px;
+		cursor: pointer;
+		color: #333;
+	}
+	.active{background: #fff;}
+	.sort .right{
+		display: none;
+	}
+	.sort .right div{
+		position: absolute;
+		left: 180px;
+		top: 0;
+		width: 650px;
+		background: #fff;
+		font-size: 12px;
+		line-height: 50px;
+		overflow: hidden;
+	} 
+	.sort .right div dl{
+		width: 650px;
+		overflow: hidden;
+	}  
+	.sort .right div dt{
+		width:100px;
+		float: left;
+		color: #444;
+		margin:0 5px;
+		font-weight: bold;
+		line-height: 42px;
+	}
+	.sort .right div dd{
+		float: left;
+		width: 540px;
+	   border-bottom: 1px dashed #ccc;
+	}
+	.sort .right div dd a{
+		color: #999;
+		line-height: 42px;
+		padding-right: 4px;
+	}
 /*----------------------------banner部分开始-------------------------------------------*/
 .banner{
 	width: 1263px;
@@ -19,9 +77,13 @@ img{
 	position: relative;
 }
 .slide{
-	width: 930px;
-	height: 370px;
-	position: relative;
+    width: 728px;
+    height: 370px;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 200px;
+
 }
 .slide li{
 	position: absolute;
@@ -48,6 +110,7 @@ img{
  	position: absolute;
  	top:330px;
  	left: 410px;
+ 	z-index: 8;
  }
  .number li{
  	height: 18px;
@@ -739,12 +802,12 @@ img{
 	
 }
 .choosestyle .paystyle_sort{
-	width: 160px;
-	height: 48px;
-	border: 1px solid #ddd;
-	padding: 26px 0 0 10px;
-	display: none;
-	margin-left: -10px;
+	    width: 87px;
+    height: 76px;
+    border: 1px solid #ddd;
+    padding: 10px 0 0 10px;
+    display: none;
+    margin-left: -10px;
 }
 .choosestyle .paystyle_sort dl{
 	float: left;

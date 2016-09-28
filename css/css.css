@@ -75,56 +75,15 @@ img{
 	background: #f3f3f3;
 	position: relative;
 }
-.slide{
+.swiper-container{
     width: 728px;
     height: 370px;
     position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 200px;
+    top: -478px;
+    left: -70px;
 
 }
-.slide li{
-	position: absolute;
-	top:0;
-	left:0;
-}
-#prev,#next{ 
-	width: 28px;
-    height: 62px;
-    line-height: 62px;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-	background: black;
-    opacity: .5;
-    filter: alpha(opacity:50);
-    position: absolute;
-    top:153px;
-    cursor: pointer;
-    }
- #prev{left: 0;} 
- #next{right: 0;}  
- .number{
- 	position: absolute;
- 	top:330px;
- 	left: 410px;
- 	z-index: 8;
- }
- .number li{
- 	height: 18px;
-	width: 18px;
-	border-radius: 50%;
-	background: #3e3e3e;
-	float: left;
-	text-align: center;
-	color: #fff;
-	top:-40px;
-	left:400px;
-	margin-left:4px;
-	cursor: pointer;
-	}	
- .number .red{background: red;opacity: 0.8;}
+
  .banner_right{
  	width: 300px;
  	height: 370px;
@@ -204,6 +163,12 @@ img{
   	border: 1px solid #e5e5e5;
   	float: left;
   	margin-right: 4px;
+  	transition: 0.5s;
+  	cursor: pointer;
+  }
+  .banner .connect li:hover{
+  	transform: scale(1.05);
+  	
   }
   .banner .connect li img{
   	display: block;
@@ -427,6 +392,7 @@ img{
  }
  .main_allkind_things .floor2 img{
   	margin-bottom: 5px;
+  	transition: .3s;
   }
   .main_allkind_things .floor2 img:hover{
 	
@@ -439,26 +405,31 @@ img{
  	margin-right:8px ;
  }
  .main_allkind_things .floor3 img:hover{
+  	transition: .3s;
  	
 	filter: alpha(opacity=55);
 	opacity: 0.55;
  }
  .main_allkind_things .floor4 img:hover{
+  	transition: .3s;
  	
 	filter: alpha(opacity=55);
 	opacity: 0.55;
  }
  .main_allkind_things .floor5 img:hover{
+  	transition: .3s;
  	
 	filter: alpha(opacity=55);
 	opacity: 0.55;
  }
  .main_allkind_things .floor6 img:hover{
+  	transition: .3s;
  	
 	filter: alpha(opacity=55);
 	opacity: 0.55;
  }
  .main_allkind_things .floor7 img:hover{
+  	transition: .3s;
  	
 	filter: alpha(opacity=55);
 	opacity: 0.55;
@@ -559,7 +530,7 @@ img{
 	text-align: center;
 	line-height: 100px;
 	font-weight: bold;
-	
+	transition: .5s;
 }
 .nav ul li a:hover{
 	background:#ff7d01;
@@ -607,6 +578,7 @@ img{
 	padding: 0 15px;
 	font-size: 14px;
 	font-weight: bold;
+	transition: .5s;
 }
 .longnav li a:hover{background: #343841;}
 /*----------------------------details部分开始-------------------------------------------*/
@@ -961,6 +933,10 @@ img{
 	height: 357px;
 	cursor: pointer;
 }
+.special_content dl dt img:hover{
+	transform: scale(1.06);
+	transition: .3s ease-in-out;
+}
 
 .good_type,.good_name{
 	color: #626262;
@@ -992,8 +968,17 @@ img{
 	background: #ec2d4c;
 	border-radius: 3px;
 	margin-top: 8px;
+	animation: rub 2s infinite ease;
 }
-
+@keyframes rub{
+	from{
+		transform: scale(0.99);
+	}
+	to{
+		transform: scale(1.01);
+		
+	}
+}
 
 /*----------------------------cart_part部分开始-------------------------------------------*/
 .tobuy{

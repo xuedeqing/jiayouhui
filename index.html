@@ -4,8 +4,10 @@
 	<meta charset="UTF-8" />
 	<title>家有汇</title>
 	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<!--top部分开始---------------------------------------------------------->
@@ -59,7 +61,7 @@
 			</div>
 		</div>
 		
-		<div class="slide">
+		<!--<div class="slide">
 			<ul>
 				<li><img src="images/slide/1.jpg" width="728px" height="370px"></li>
 				<li><img src="images/slide/2.jpg" width="728px" height="370px"></li>
@@ -70,15 +72,27 @@
 			</ul>
 			<div id="prev">&lt;</div>
 			<div id="next">&gt;</div>
+		</div>-->
+		<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/slide/1.jpg"></div>
+					<div class="swiper-slide"><img src="images/slide/2.jpg"></div>
+					<div class="swiper-slide"><img src="images/slide/3.jpg"></div>
+					<div class="swiper-slide"><img src="images/slide/4.jpg"></div>
+					<div class="swiper-slide"><img src="images/slide/5.jpg"></div>
+					<div class="swiper-slide"><img src="images/slide/6.jpg"></div>
+					
+				</div>
+				<div class="swiper-pagination"></div>
 		</div>
-		<ul class="number">
+		<!--<ul class="number">
 				<li>1</li>
 				<li>2</li>
 				<li>3</li>
 				<li>4</li>
 				<li>5</li>
 				<li>6</li>
-		</ul>
+		</ul>-->
 		<div class="banner_right">
 			<h3>今日特价</h3>
 			<div class="introduce">

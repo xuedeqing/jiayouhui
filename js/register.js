@@ -40,7 +40,7 @@ $(function(){
 		$(".warning_dif").css({"display":"none"});
 	    $(".confirmcode_inp").css({"border":"1px solid #dbdbd9"});
 		var confirmcode=$(".confirmcode_inp").val();
-		if(confirmcode!=$(".setcode_inp").val()||confirmcode==""){
+		if(confirmcode!=$(".setcode_inp").val()||confirmcode==""||!/^[a-zA-Z]\w{5,17}$/.test(confirmcode)){
 			$(".right_code").css({"display":"none"});
 			$(".warning_dif").css({"display":"block"});
 	    	$(".confirmcode_inp").css({"border":"1px solid #e22"});

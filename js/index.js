@@ -1,5 +1,5 @@
 $(function(){
-	$(".slide li:first").show();
+/*	$(".slide li:first").show();
 	var $num=0;
 	//鼠标移上去停止定时器
 	$(".slide").mouseover(function(){
@@ -40,7 +40,13 @@ $(function(){
 				$num=$(_this).index();
     	        fnChange()}
 	},200)
-	})
+	})*/
+	
+	var swiper = new Swiper(".swiper-container", {
+					autoplay: 3000,
+					loop: true,
+					pagination: '.swiper-pagination'
+				});
 	//主页ajax部分
 	$.ajax({
 		url:"data/index.txt",

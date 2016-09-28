@@ -92,7 +92,7 @@ $(function(){
 		 clearTimeout( $(".floor_ctrl")[0].timer);
 		 $(".floor_ctrl")[0].timer=setTimeout(function(){
 		 	if($offset>10){
-			  $(".floor_ctrl").stop().animate({"width":"60px","height":"380px","oapcity":"1"},300);
+			  $(".floor_ctrl").stop().animate({"width":"60px","height":"276px","oapcity":"1"},300);
 				//$(".floor_ctrl").fadeIn();
 			}else{
 			   $(".floor_ctrl").stop().animate({"width":"0","height":"0","oapcity":"0"},300)

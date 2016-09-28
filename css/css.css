@@ -44,7 +44,6 @@ img{
 		width: 650px;
 		background: #fff;
 		font-size: 12px;
-		line-height: 50px;
 		overflow: hidden;
 	} 
 	.sort .right div dl{
@@ -332,8 +331,10 @@ img{
 	float: left;
 	margin-left: 6px;
 }
-.main_contents .threepics div img{
+.main_contents .threepics div img:hover{
 	cursor: pointer;
+	border: 1px solid #FF7D01;
+	box-shadow: 0 0 3px #FF7D01;
 }
 /*----------------------------main_allkind_things部分开始-------------------------------------------*/
 /*----------------------------floor1部分开始-------------------------------------------*/
@@ -383,6 +384,11 @@ img{
 	float: left;
 	margin:0 8px 5px 0;
 }
+.main_allkind_things .floor1 img:hover{
+	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
+}
 
 .main_allkind_things .floor1 .someinfo{
 	width: 231px;
@@ -416,16 +422,46 @@ img{
  }
 /*----------------------------floor2部分开始-------------------------------------------*/
  .main_allkind_things .floor2{
- 	height: 470px;
+ 	height: 495px;
 	margin-top: 30px;
  }
  .main_allkind_things .floor2 img{
   	margin-bottom: 5px;
   }
+  .main_allkind_things .floor2 img:hover{
+	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
+}
 /*----------------------------floor3部分开始-------------------------------------------*/
  .main_allkind_things .floor3 .bigger2, .main_allkind_things .floor5 .bigger4{
  	float: left;
  	margin-right:8px ;
+ }
+ .main_allkind_things .floor3 img:hover{
+ 	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
+ }
+ .main_allkind_things .floor4 img:hover{
+ 	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
+ }
+ .main_allkind_things .floor5 img:hover{
+ 	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
+ }
+ .main_allkind_things .floor6 img:hover{
+ 	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
+ }
+ .main_allkind_things .floor7 img:hover{
+ 	
+	filter: alpha(opacity=55);
+	opacity: 0.55;
  }
  .main_allkind_things .floor3 .floor3_right,.main_allkind_things .floor4 .floor4_left,.main_allkind_things .floor5 .floor5_right{
  	float: left;
@@ -440,24 +476,26 @@ img{
 .main_allkind_things .floor6{
 	margin-bottom: 30px;
 }
+
 /*----------------------------楼梯控制部分开始-------------------------------------------*/
 .floor_ctrl{
-	width: 60px;
+	width: 35px !important;
+	height: auto !important;
 	text-align: center;
 	position: fixed;
-	bottom: 50px;
-	left: 50px;
+	bottom: 20px;
+	left:38px;
+	z-index: 10;
 }
 .floor_ctrl span{
 	margin-bottom: 2px;
 	display: block;
 	cursor: pointer;
 	color: #fff;
-	height: 44px;
-	padding: 10px;
-	line-height: 22px;
+	height: 40px;
+	line-height: 20px;
 	background: #666;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: "微软雅黑";
 	font-weight: bold;
 }
@@ -521,6 +559,7 @@ img{
 	text-align: center;
 	line-height: 100px;
 	font-weight: bold;
+	
 }
 .nav ul li a:hover{
 	background:#ff7d01;
